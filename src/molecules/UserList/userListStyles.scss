@@ -1,0 +1,7 @@
+.subtitle-cont{
+  @apply flex justify-between items-center mt-6;
+}
+
+.list-item-cont{
+  @apply cursor-pointer pl-[0.875rem] pr-3 mr-3 py-2 flex items-center justify-between mt-3 mb-3 rounded-lg;
+}

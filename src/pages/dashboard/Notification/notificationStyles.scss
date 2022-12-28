@@ -1,0 +1,11 @@
+.note-wrapper{
+    @apply flex items-center border-b border-solid border-[#00000014] rounded-xl py-3;
+}
+
+.main-notification{
+    @apply w-full h-full pl-6 pt-4;
+
+    .note-wrapper{
+        @apply flex items-center border-b border-solid border-[#00000014] rounded-xl py-3;
+    }
+}

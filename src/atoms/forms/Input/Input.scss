@@ -1,0 +1,22 @@
+.Input {
+  @apply relative w-full rounded-lg border h-14 flex items-center px-4;
+  &.textarea-wrap {
+    @apply min-h-[120px] px-0;
+    textarea {
+      @apply py-3 px-4;
+    }
+  }
+  label {
+    @apply absolute bg-white  left-4;
+    transition: all 0.3s ease-out;
+  }
+}
+
+.TextArea{
+  @apply relative w-full rounded-lg border flex items-center px-4;
+
+  label {
+    @apply absolute bg-white  left-4;
+    transition: all 0.3s ease-out;
+  }
+}

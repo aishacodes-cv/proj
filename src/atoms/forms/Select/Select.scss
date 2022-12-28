@@ -1,0 +1,11 @@
+.Select {
+  @apply relative w-full rounded-lg border h-14 flex items-center px-4;
+
+  label {
+    @apply absolute bg-white  left-4;
+    transition: all 0.3s ease-out;
+  }
+  select {
+    @apply border-none focus:outline-none bg-white z-10 absolute right-4 left-4 w-11/12 top-4 bottom-4;
+  }
+}

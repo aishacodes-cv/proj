@@ -1,0 +1,13 @@
+.stats-wrapper{
+  // width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12.18rem, 1fr));
+  grid-gap: 1.25rem;
+  margin-top: 2.68rem;
+}
+
+@media (max-width: 1024px) {
+  .stats-wrapper{
+    grid-template-columns: repeat(auto-fill, 12.75rem);
+  }
+}

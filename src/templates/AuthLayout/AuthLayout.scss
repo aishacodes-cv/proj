@@ -1,0 +1,11 @@
+.Auth {
+  @apply h-screen w-screen flex justify-center items-center lg:grid grid-cols-2;
+
+  aside {
+    @apply hidden w-full h-full py-[1.875rem] px-[4.68rem] bg-cvCharcoal05 lg:flex flex-col;
+
+    img {
+      @apply w-[30.82rem] h-[25.125rem] object-cover;
+    }
+  }
+}

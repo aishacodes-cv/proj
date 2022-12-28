@@ -1,0 +1,15 @@
+.title-cont{
+  @apply flex text-2xl text-cvGreen font-bold mb-[0.875rem] mt-[2.875rem];
+
+  .active-task-size{
+    @apply opacity-70 ml-2;
+  }
+}
+.list-cont{
+  @apply flex flex-col;
+
+  .list-item{
+    @apply w-full flex justify-between border border-solid py-[0.86rem] px-[0.6rem] m-0 rounded-none;
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+}

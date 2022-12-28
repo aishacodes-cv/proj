@@ -1,0 +1,31 @@
+.auto-complete {
+  .drop-down {
+    padding: 1rem 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    z-index: 40;
+    box-shadow: 0px 6px 20px rgba(162, 161, 183, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    // transform: scale(0);
+    // transform-origin: top right;
+    transition: transform 0.2s ease;
+  }
+  .option {
+    @apply flex justify-between w-full items-center my-3 cursor-pointer;
+    .side-bar {
+      @apply h-[24px] w-[8px] bg-primary rounded-full;
+    }
+    span {
+      margin: 0;
+    }
+  }
+}

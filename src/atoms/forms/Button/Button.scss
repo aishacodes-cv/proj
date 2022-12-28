@@ -1,0 +1,11 @@
+.Button {
+  @apply bg-primary outline-none text-base text-white font-semibold rounded-lg  h-12 w-full;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 1rem;
+  &.outline {
+    @apply bg-white font-normal text-black;
+    border: 1px solid gray;
+  }
+}

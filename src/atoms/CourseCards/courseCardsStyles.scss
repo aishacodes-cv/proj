@@ -1,0 +1,15 @@
+.card {
+  .img-cont {
+    @apply w-full h-[10rem] rounded-2xl;
+  }
+  .title {
+    @apply mt-3;
+
+    h2 {
+      @apply text-lg font-medium text-neutral200;
+    }
+    span {
+      @apply text-xs font-medium text-cvCharcoal40;
+    }
+  }
+}

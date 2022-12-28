@@ -1,0 +1,99 @@
+@use "../../../mixins" as *;
+
+.pg-time-logger {
+  .Input,
+  .Select,
+  .SearchInput {
+    @apply bg-cvCharcoal05 text-cvCharcoal font-medium rounded-[8px] h-full;
+    border: none;
+    ::placeholder {
+      @apply text-cvCharcoal font-medium;
+    }
+    label,
+    select,
+    input {
+      background-color: transparent;
+    }
+    select {
+      width: auto;
+      position: static;
+    }
+  }
+  .manual-time {
+    .drop-down-content {
+      padding: 0 !important;
+    }
+    .input-wrap {
+      padding: 1rem;
+      > div {
+        width: 50%;
+      }
+      label {
+        @apply text-sm;
+      }
+    }
+    .Input {
+      height: 40px;
+      margin-top: 0.3rem;
+      input {
+        height: 40px;
+      }
+    }
+  }
+  .Select {
+    padding: 0;
+    height: 2rem;
+    justify-content: center;
+  }
+  .drop-select {
+    @apply flex items-center justify-between w-full lg:w-[220px] bg-cvCharcoal05 h-[48px] px-4 rounded-[8px];
+    &_placeholder {
+      @apply flex items-center space-x-2 flex-grow max-w-[155px];
+      p,
+      span,
+      input {
+        background-color: transparent;
+        @apply text-base font-medium text-left
+          flex-grow;
+        @include summaryTxt();
+      }
+    }
+  }
+
+  .drop-select-wrap {
+    .SearchInput {
+      width: 100%;
+      margin-bottom: 0.6rem;
+    }
+    .drop-down-content {
+      width: 270px;
+    }
+    .option {
+      @apply flex space-x-4 items-center my-1 max-w-full;
+      > div {
+        @apply flex space-x-3 items-center w-full;
+      }
+      p,
+      input {
+        cursor: pointer;
+        background-color: transparent;
+        @include summaryTxt();
+        white-space: nowrap;
+      }
+      .circle {
+        min-width: 12px;
+        min-height: 12px;
+        max-width: 12px;
+        max-height: 12px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .start-time-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #0d9e63;
+    box-shadow: 0px 0px 8px rgba(4, 148, 120, 0.5);
+  }
+}

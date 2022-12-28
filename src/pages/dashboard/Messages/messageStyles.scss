@@ -1,0 +1,13 @@
+.Load-conversation-btn{
+    @apply px-4 py-2 bg-white w-max text-base text-neutral07 font-bold mt-6 rounded-lg border-2 border-solid border-[#EFEFEF]
+}
+
+.modal-main {
+    @apply w-full bg-white rounded-2xl px-8 py-8 relative;
+}
+.modal-create-btn{
+    @apply w-[8.25rem] h-[3rem] bg-primary text-white rounded-lg font-bold text-base cursor-pointer;
+}
+.modal-cancel-btn{
+    @apply w-[8.25rem] h-[3rem] text-primary bg-white border border-solid border-primary rounded-lg ml-4 font-bold text-base cursor-pointer;
+}

@@ -1,0 +1,18 @@
+.task-card{
+  @apply w-full h-[7.25rem] rounded-[5px] border border-solid border-cvCharcoal10 mb-5 py-4 pl-4 pr-8;
+
+  h2{
+    @apply text-base font-semibold text-neutral100 mt-3;
+  }
+  .time-date-cont{
+    @apply flex items-center justify-between mt-5;
+
+    .time-cont{
+      @apply flex items-center;
+    }
+
+    img{
+      @apply w-6 h-6 rounded-full;
+    }
+  }
+}

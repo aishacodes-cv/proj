@@ -1,0 +1,43 @@
+.Tabs {
+  @apply flex  items-center gap-8 border-b-2 border-[#EDEFF5];
+
+  span.Tab {
+    @apply cursor-pointer relative  pb-[1.125rem] text-neutral;
+
+    &.active {
+      @apply font-medium text-[#141416];
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: #1b734f;
+        border-radius: 2px 4px 0px 0px;
+        bottom: -2px;
+        right: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &.orangeType {
+    width: fit-content;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    span.Tab {
+      @apply text-darkBlue-400 pb-[0.8rem];
+
+      &.active {
+        @apply text-orange-400;
+        &::before {
+          @apply bg-orange-400;
+          position: absolute;
+          content: "";
+          height: 2px;
+        }
+      }
+    }
+  }
+}

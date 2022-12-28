@@ -1,0 +1,83 @@
+// .home-wrapper{
+//   @apply h-full ml-10 mt-7 pr-4 overflow-y-auto;
+//   display: grid;
+//   grid-template-columns: 70% 30%;
+
+//   .title{
+//     @apply text-2xl text-cvGreen font-semibold;
+//   }
+//   .header-description{
+//     @apply text-darkBlue-400 text-sm font-normal;
+//   }
+
+//   .user-profile{
+//     @apply bg-green-50 rounded-[2.5rem] ml-7 relative flex justify-center;
+
+//     .half-eclipse{
+//       @apply w-max h-max absolute left-0 top-14 bottom-0;
+//     }
+//     .half-eclipse-right{
+//       @apply  w-max h-max absolute bottom-[7.5rem] right-0;
+//     }
+//     .full-circle{
+//       @apply w-full absolute top-[8.875rem] flex justify-center;
+//     }
+//     .profile-content{
+//       @apply  flex flex-col w-[90%] z-30;
+//     }
+//     .pencil-cont{
+//       @apply mt-7 px-8 flex justify-end;
+//     }
+//     .profile-img-cont{
+//       @apply w-full flex items-center justify-center;
+//     }
+//     .user-desc{
+//       @apply text-center mb-5;
+//     }
+//     .profile-stats-cont{
+//       @apply flex flex-col border border-y-2 border-x-0 border-orange-200 w-full py-2 mt-[1.68rem];
+//     }
+//     .stat{
+//       @apply flex justify-between py-2 text-sm font-medium text-darkBlue-400;
+//     }
+//     .graph-stat{
+//       @apply w-full flex flex-col justify-center items-center mt-24 mb-[4.56rem];
+//     }
+//   }
+
+// }
+
+.dashboard-wrapper {
+  @apply w-full text-sm lg:text-base h-full lg:px-12 px-5 overflow-auto;
+
+  .intro {
+    @apply text-2xl mt-10 mb-8;
+  }
+
+  .recent-project-title-cont {
+    @apply w-full flex items-center justify-between;
+
+    h2 {
+      @apply font-semibold text-greyScale900;
+      font-size: 1.5em;
+      line-height: 2rem;
+    }
+    span {
+      @apply text-cvGreenLight;
+      font-size: 0.875em;
+      line-height: 1.25rem;
+    }
+  }
+  .cards-cont {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-4 gap-y-6 mt-4;
+  }
+  .class-card {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6 mt-4;
+  }
+  .task-title {
+    @apply text-lg text-neutral100 font-semibold;
+  }
+  .task-number {
+    @apply bg-cvCharcoal text-white px-2 ml-3;
+  }
+}

@@ -1,0 +1,8 @@
+@mixin summaryTxt($lines: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  line-height: 1.5;
+  max-height: 1.5rem * $lines;
+}

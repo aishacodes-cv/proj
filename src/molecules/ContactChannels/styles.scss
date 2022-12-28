@@ -1,0 +1,7 @@
+.icons-cont{
+  @apply w-full flex justify-center items-center;
+
+  .icon{
+    @apply mx-3 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center;
+  }
+}

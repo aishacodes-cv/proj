@@ -1,0 +1,15 @@
+.list-wrapper{
+  @apply w-full h-[55%] pr-3 overflow-auto mb-16;
+
+}
+.list-item{
+  @apply w-full cursor-pointer pl-[0.875rem] pr-3 py-2 flex items-center justify-between mt-4 rounded-lg;
+}
+
+.list-item-1{
+  @apply bg-cvCharcoal05;
+}
+
+.list-item-2{
+  @apply bg-transparent
+}

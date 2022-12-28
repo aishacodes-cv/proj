@@ -1,0 +1,49 @@
+.DashboardLayout {
+  @apply flex lg:grid h-screen w-screen overflow-hidden bg-cvCharcoal05;
+  grid-template-columns: minmax(15.0625rem, 15%) 1fr;
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.384);
+    @apply lg:hidden bg-blend-overlay fixed inset-0;
+    z-index: 10;
+  }
+  aside {
+    @apply bg-cvCharcoal05 transition py-4 h-full flex flex-col overflow-hidden;
+    @media (max-width: 1024px) {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 70%;
+      max-width: 400px;
+      left: -120vw;
+      z-index: 100;
+      transition: left 0.4s linear;
+
+      &.open_nav {
+        left: 0;
+      }
+    }
+
+    a {
+      @apply text-cvCharcoal relative px-6;
+
+      &.active {
+        @apply text-cvYellow;
+
+        &::before {
+          @apply w-1 h-6 bg-cvYellow absolute left-0;
+          border-radius: 0px 4px 4px 0px;
+          content: "";
+        }
+        svg {
+          fill: "#F09330";
+        }
+      }
+    }
+  }
+  .SearchInput {
+    @apply hidden lg:flex;
+  }
+  .dashboard-inner {
+    @apply lg:p-8 p-5 h-full overflow-y-auto;
+  }
+}
